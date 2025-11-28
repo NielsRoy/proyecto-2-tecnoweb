@@ -26,9 +26,9 @@ use App\Http\Controllers\Admin\ReporteController;
 // RUTA RAÍZ - REDIRIGE AL LOGIN
 // =====================================================
 
-Route::get('/', function () {
-    return Redirect::route('login');
-});
+// Route::get('/', function () {
+//     return Redirect::route('login');
+// });
 
 // =====================================================
 // RUTAS DEL SISTEMA DE RESTAURANTE
