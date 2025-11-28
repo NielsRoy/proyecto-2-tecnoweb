@@ -4,6 +4,7 @@ import { Head, Link, router, usePage } from '@inertiajs/vue3';
 import ApplicationMark from '@/Components/ApplicationMark.vue';
 import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
+import GlobalSearch from '@/Components/GlobalSearch.vue';
 
 const page = usePage();
 const user = page.props.auth.user;
@@ -685,27 +686,8 @@ function goToSidebarItem(item) {
                         </div>
 
 
-                        <div class="relative">
-                            <input
-                                v-model="searchQuery"
-                                @input="updateSearchResults"
-                                @focus="updateSearchResults"
-                                @blur="() => setTimeout(() => searchActive = false, 200)"
-                                type="text"
-                                placeholder="Buscar menú..."
-                                class="px-3 py-1 rounded border border-gray-300 focus:outline-none focus:ring w-40"
-                            />
-                            <ul v-if="searchActive && searchResults.length" class="absolute left-0 mt-1 w-full bg-white text-black rounded shadow z-50">
-                                <li
-                                    v-for="item in searchResults"
-                                    :key="item.ruta"
-                                    @mousedown.prevent="goToSidebarItem(item)"
-                                    class="px-3 py-2 hover:bg-indigo-100 cursor-pointer"
-                                >
-                                    {{ item.nombre }}
-                                </li>
-                            </ul>
-                        </div>
+                        <!-- Buscador Global -->
+                        <GlobalSearch />
 
                     </div>
 

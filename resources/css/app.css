@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root.theme-light {
     --bg-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --bg-secondary: rgba(255, 255, 255, 0.95);
@@ -455,13 +456,11 @@
    FUENTES PERSONALIZADAS POR TEMA
    ======================================== */
 
-/* Importar fuentes de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap');
 
 /* Tema Niños - Fuente divertida y redondeada */
 :root.theme-kids {
     font-family: 'Fredoka', sans-serif;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 :root.theme-kids h1,
@@ -501,7 +500,7 @@
 /* Tema Adultos - Fuente serif elegante */
 :root.theme-adult {
     font-family: 'Merriweather', serif;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 :root.theme-adult h1,
@@ -544,7 +543,7 @@
 }
 
 :root.theme-kids {
-    font-size: 17px !important;
+    font-size: 15px !important;
 }
 
 /* Tema Jóvenes - Aplicar a TODOS los elementos */
@@ -586,5 +585,5 @@
 }
 
 :root.theme-adult {
-    font-size: 15px !important;
+    font-size: 18px !important;
 }
