@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
     
-    base: '/inf513/grupo10sa/proyecto2/build/',
+    base: '/inf513/grupo10sa/proyecto2/public/build/',
 
     plugins: [
         laravel({
